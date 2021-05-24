@@ -1,0 +1,279 @@
+1)
+false
+true
+true
+false
+----------------------------------------------------------
+2)
+true
+true
+false
+true
+true
+false
+false
+false
+----------------------------------------------------------
+3)
+let A = Number(prompt("Ensira o valor A"),0)
+
+if (A > 10) {
+            console.log("O valor A é maior que 10")
+}
+----------------------------------------------------------
+4)
+let numero = Number(prompt("Digite o número"))
+
+if (numero % 2 === 0) {
+    console.log(numero / 2)
+}
+    alert("Programa finalizado...")
+----------------------------------------------------------
+5)
+let numero = Number(prompt("Digite o número"))
+
+if (numero % 2 === 0) {
+            alert("O número é par")
+} else {
+            alert("O número é ímpar")
+}
+----------------------------------------------------------
+6)
+let numero = Number(prompt("Digite o número."))
+
+if (numero > 20 && numero < 90){
+            alert("O número está na faixa entre 20 e 90.")
+} else {
+            alert("O número está fora da faixa.")
+}
+----------------------------------------------------------
+7)
+false
+true
+true
+2
+false
+----------------------------------------------------------
+8)
+let numero1 = Number(prompt("Digite o primeiro número"),0)
+let numero2 = Number(prompt("Digite o segundo número"),0)
+let numero3 = Number(prompt("Digite o terceiro número"),0)
+
+if (numero1 > numero2 && numero1 > numero3){
+            alert(numero1)
+} else if (numero2 > numero1 && numero2 > numero3){
+            alert(numero2)
+} else {
+            alert(numero3)
+}
+----------------------------------------------------------
+9)
+let resultado = ""
+let a = Number(prompt("digite o primeiro numero"),0)
+let b = Number(prompt("digite o segundo numero"),0)
+
+a + b < 4 ? resultado = "Abaixo" : resultado = "Acima"
+            console.log(`Resultado é: ${resultado}`)
+----------------------------------------------------------
+10)
+let lado1 = Number(prompt("Medida do primeiro lado."),0)
+let lado2 = Number(prompt("Medida do segundo lado."),0)
+let lado3 = Number(prompt("Medida do terceiro lado."),0)
+
+if (lado1 === lado2 && lado2 === lado3) {
+            alert("Triângulo Equilátero.")
+
+} else if (lado1 === lado3 && lado1 !== lado2 || lado1 === lado2 && lado1 !== lado3 || lado2 === lado3 && lado2 !== lado1) {
+            alert("Triângulo Isósceles.")
+
+} else if (lado1 !== lado2 && lado1 !== lado3 && lado2 !== lado3) {
+            alert("Triângulo Escaleno.")
+}
+----------------------------------------------------------
+11)
+let numero = Number(prompt("digite o número"),0)
+let resultado = Math.sqrt(numero)
+
+if (numero = NaN){
+        alert("o numero é inválido.")
+}
+        alert(resultado)
+----------------------------------------------------------
+12)
+let numero = Number(prompt("Digite o número:"),0)
+
+if (numero % 5 === 0){
+            alert("O número é divisível por 5!")
+} else {
+            alert("O número não é divisível por 5!")
+}
+----------------------------------------------------------
+13)
+let numero = Number(prompt("Digite o número."),0)
+
+if (numero % 2 === 0){
+            alert(Math.sqrt(numero))
+} else {
+            alert(numero ** 2)
+}
+----------------------------------------------------------
+14)
+let salario = Number(prompt("Digite o salario."),0)
+let valorDaPrestacao = Number(prompt("Digite o valor da prestação."),0)
+let vintePorcentoSalario = (salario / 100) * 20
+
+if (valorDaPrestacao > vintePorcentoSalario){
+            alert("empréstimo não concedido.")
+
+} else {
+            alert("Empréstimo concedido.")
+}
+----------------------------------------------------------
+15)
+let golsPrimeiroTime = Number(prompt("Quantidade de gols do primeiro time."),0)
+let golsSegundoTime = Number(prompt("Quantidade de gols do segundo time."),0)
+
+if (golsPrimeiroTime === golsSegundoTime){
+            alert("Empate")
+
+} else if (golsPrimeiroTime > golsSegundoTime){
+            alert("Vitória do PRIMEIRO time!")
+
+} else {
+            alert("Vitória do SEGUNDO time!")
+}
+----------------------------------------------------------
+16)
+        let idade = Number(prompt("Digite a sua idade."),0)
+
+if (idade >= 18 && idade <= 70){
+            alert("O voto obrigatório!")
+} else if (idade < 18 && idade >= 16){
+            alert("O voto opcional!")
+} else {
+            alert("Não precisa votar!")
+}
+----------------------------------------------------------
+17)
+let numero1 = Number(prompt("Digite o primeiro número."),0)
+    let numero2 = Number(prompt("Digite o segundo número."),0)
+        let numero3 = Number(prompt("Digite o terceiro número."),0)
+
+            if (numero3 > numero2 && numero3 > numero1 && numero2 > numero1){
+                console.log(numero3, numero2 ,numero1)
+
+            } else if (numero3 > numero2 && numero3 > numero1 && numero1 > numero2){
+                console.log(numero3, numero1, numero2)
+
+            } else if (numero2 > numero3 && numero2 > numero1 && numero3 > numero1){
+                console.log(numero2, numero3, numero1)
+
+            } else if (numero2 > numero3 && numero2 > numero1 && numero1 > numero3){
+                console.log(numero2, numero1, numero3)
+
+            } else if (numero1 > numero2 && numero1 > numero3 && numero2 > numero3){
+                console.log(numero1, numero2, numero3)
+
+            } else {
+                console.log(numero1, numero3, numero2)
+}   
+----------------------------------------------------------
+18)
+let dia = Number(prompt("Digite um número de 1-7"),0)
+        switch (dia) {
+            case 2:
+                alert("Segunda-Feira")
+                break;
+            case 3:
+                alert("Terça-Feira")
+                break;
+            case 4:
+                alert("Quarta-Feira")
+                break;
+            case 5:
+                alert("Quinta-Feira")
+                break;
+            case 6:
+                alert("Sexta-Feira")  
+                break;
+            case 7:
+                alert("Sábado-Feira")
+                break;
+            case 1:
+                alert("Domingo")
+                break;
+            default:
+                alert("Não existe")
+}
+----------------------------------------------------------
+19)
+let idade = Number(prompt("Digite a sua idade."),0)
+
+        if (idade < 18 || idade > 67){
+                alert("Não pode doar sangue!")
+        } else {
+                alert("Pode doar sangue!")
+}
+----------------------------------------------------------
+20)
+let mes = Number(prompt("Digite um número de 1-12"),0)
+
+switch(mes){
+    case 1:
+        alert("Janeiro")
+break;
+    case 2:
+        alert("Fevereiro")
+break;
+    case 3:
+        alert("março")
+break;
+    case 4:
+        alert("Abril")
+break;
+    case 5:
+        alert("Maio")
+break;
+    case 6:
+        alert("junho")  
+break;
+    case 7:
+        alert("julho")
+break;
+    case 8:
+        alert("agosto")
+break;
+    case 9:
+        alert("setembro")
+break;
+    case 10:
+        alert("outubro") 
+break;
+    case 11:
+        alert("novembro") 
+break;
+    case 12:
+        alert("dezembro")
+break     
+    default:
+        alert("Não existe")
+}
+------------------------------------------------------------
+21)
+let horarioDeEstudo = prompt("Em que turno você estuda? Digite M Para Matutino, V Para Vespertino ou N Para Noturno.").toUpperCase()
+
+            switch (horarioDeEstudo) {
+                case "M":
+                alert("Bom Dia!")
+            break;
+                case "m":
+                alert("Boa Tarde!")
+            break;
+                case "M":
+                alert("Boa Noite!")
+            break;     
+                default:
+                alert("Valor Inválido!")
+}
+--------------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,321 @@
+1)
+// while
+let i = 0
+        while (i < 10) {
+           console.log("Olá mundo!")
+           i++ 
+        }
+// do-while
+let i = 0
+        do {
+        console.log("Olá Mundo!")
+        i++
+} while (i < 10)
+// for
+for (let i = 0; i < 10; i++) {
+            console.log("Olá Mundo!")
+        }
+---------------------------------------------------------------------
+2)
+// while
+
+let i = 1
+        while (i < 11) {
+           console.log(`Estou aparecendo pela ${i}º vez na tela!`)
+           i++
+        }
+
+// do-while
+
+let i = 1
+        do {
+        console.log(`Estou aparecendo pela ${i}º vez na tela!`)
+        i++
+} while (i < 11)
+
+// for
+
+for (let i = 1; i < 11; i++) {
+            console.log(`Estou aparecendo pela ${i}º vez na tela!`)
+        }
+---------------------------------------------------------------------
+3)
+for (let i = 10; i > -1; i--) {
+        console.log(i)
+    }
+console.log("FIM")
+---------------------------------------------------------------------
+4)for (let i = 0; i < 3; i++) {
+        let n1 = Number(prompt("primeiro numero"),0)
+        let n2 = Number(prompt("segundo numero"),0)
+        let resultado = n1-n2
+        console.log(`${n1} - ${n2} = ${resultado}`) 
+}
+ ---------------------------------------------------------------------
+5)
+let i = 0
+        do {
+            console.log(i)
+            i+=1000
+        } while (i < 100000)
+---------------------------------------------------------------------
+6)
+let soma = 0
+for ( let i = 0; i < 5; i++){
+let n = Number(prompt("numero"))
+soma+=n
+}
+let media = soma / 5
+console.log(`Soma: ${soma} Média: ${media.toFixed(2)}`)
+---------------------------------------------------------------------
+7)
+let n1 = Number(prompt("numero"),0)
+for (let i = 0; i<=n1;i++) {
+    if (i % 2 === 1){
+        console.log(i)
+    }
+}
+---------------------------------------------------------------------
+8)
+let numero = Number(prompt("digite o numero"),0)
+for(let i = 1; i <=10; i++){
+    console.log(`${numero} * ${i} = ${numero*i}`)
+} 
+---------------------------------------------------------------------
+9)
+0         
+---------------------------------------------------------------------
+10)
+let impares = 0
+let pares = 0
+
+for(let i = 0; i < 10; i++){
+    let numero = Number(prompt("Digite o número"))
+if (numero % 2 === 0){
+    pares++
+} else if (numero % 2 != 0){
+    impares++
+} 
+} console.log(`Ìmpares: ${impares}, Pares: ${pares}`)
+---------------------------------------------------------------------
+11)
+let inteiros = 0
+let foraDoIntervalo = 0
+
+    for(let i = 0; i < 100; i++){
+            let numero = Number(prompt("Digite o número"))
+
+    if (numero >= 10 && numero <= 20){
+inteiros++
+
+}   else if (numero > 20 || numero < 10 && numero > 0){
+foraDoIntervalo++
+
+}   else if (numero < 0){
+    break
+}
+}       console.log(`Inteiros: ${inteiros}, Fora Do Intervalo: ${foraDoIntervalo}`)
+---------------------------------------------------------------------
+12)
+let valores = 0
+let quantidade = 0
+    while (true) {
+        let numero = Number(prompt("digite o numero"))
+        if (numero < 0){
+        break
+} if (numero >= 0){
+    valores+=numero
+    quantidade++    
+} 
+} console.log(`Média: ${(valores/quantidade).toFixed(2)}.`)
+---------------------------------------------------------------------
+13)
+sequencia = ""
+
+for(let i = 1;i < 16;i++) {
+sequencia += ' ' + (7*i)
+} console.log(sequencia)
+---------------------------------------------------------------------
+14)
+let numero = Number(prompt("Digite um número para fatorar"))
+let fatoracao = numero
+for(let i = numero - 1;i > 0;i--) {
+fatoracao*=i
+}
+console.log(`Fator de ${numero} é: ${fatoracao}`)
+---------------------------------------------------------------------
+15)
+let salario = 0
+let filhos = 0
+let maiorSalario = 0
+let contador = 0
+
+    while (true) {
+let salarioPessoa = Number(prompt("Quanto você ganha? "))
+let filhosPessoa = Number(prompt("Quantos filhos você tem? "))
+        if (salarioPessoa < 0 || filhosPessoa < 0){
+            break
+}
+        contador++
+
+        if (salarioPessoa>maiorSalario){
+            maiorSalario = salarioPessoa
+}
+        salario+=salarioPessoa
+        filhos+=filhosPessoa
+}
+    console.log(`Média Salarial: ${(salario/contador).toFixed(2)}\nMédia de filhos: ${(filhos/contador).toFixed(2)}\nMaior Salário: ${maiorSalario}`)
+---------------------------------------------------------------------
+16)
+let maiorValor = 0
+    let menorValor = 999999999999999                                                                                                                                                                                                        
+    for(let i = 0; i < 5; i++){
+        let valorDigitado = Number(prompt("digite o valor"))
+        if (valorDigitado>maiorValor){
+            maiorValor = valorDigitado
+        ,
+    } if (valorDigitado < menorValor){
+            menorValor = valorDigitado
+        } 
+    } console.log(`O menor valor digitado foi: ${menorValor}\n O maior valor digitado foi: ${maiorValor}`)                                                             
+---------------------------------------------------------------------
+17)
+let votosJose = 0
+let votosMaria = 0
+let votosJoao = 0
+let votosNulos = 0
+let votosEmBranco = 0
+
+while (true) {
+let votos = Number(prompt(`Em quem você vota?\n1 - José Bolinha\n2 - Maria Nascimento\n3 - João da Silva\n4 - Voto Nulo\n5 - Voto em branco\n0 - cancelar`),0)
+let funcionando = true
+switch (votos){
+case 0:
+    funcionando = false
+break
+case 1:
+    votosJose++
+break
+case 2:
+    votosMaria++
+break
+case 3:
+    votosJoao++
+break
+case 4: 
+    votosNulos++
+break
+case 5:
+    votosEmBranco++
+break
+default:
+    alert("Não tem essa opção")
+
+} if (!funcionando){
+break
+}
+}
+console.log(`Total de Votos\nJosé Bolinha: ${votosJose} voto(s)\nMaria Nascimento: ${votosMaria} voto(s)\nJoão da Silva: ${votosJoao} voto(s)\nVotos Nulos: ${votosNulos} voto(s)\nVotos em Branco: ${votosEmBranco} voto(s)`)
+
+---------------------------------------------------------------------
+18)
+for(let i = 0;i < 4;i++) {
+    let media = Number(prompt("digite a média do aluno"))
+     if (media < 0 || media>10){
+              alert("Digite uma média dentro de 0-10")
+  
+   } else if (media <5 && media>=0){
+              alert("CONCEITO D")
+  
+   } else if (media <7){
+              alert("CONCEITO C")
+  
+   } else if (media <9){
+              alert("CONCEITO B")
+  
+   } else {
+              alert("CONCEITO A")
+  
+   }
+  }
+  ---------------------------------------------------------------------
+  19)
+  while (true) {
+    let matricula = Number(prompt("Qual a matricula do aluno? "))
+    if (matricula === 0){
+        break
+    }
+    let nota1 = Number(prompt("Qual a primeira nota? "))
+    let nota2 = Number(prompt("Qual a segunda nota? "))
+    let nota3 = Number(prompt("Qual a terceira nota? "))
+    let media = (nota1 + nota2 + nota3)/3
+    console.log(` A média do aluno com a matricula ${matricula} é ${media.toFixed(2)}`)
+}
+---------------------------------------------------------------------
+20)
+        let numero1 = Number(prompt("Me de o numero 1"))
+        let numero2 = Number(prompt("Me de o numero 2"))
+        let soma = numero1+numero2
+        let menorNum = 0
+        let maiorNum = 0
+            if (numero1<=numero2){
+                menorNum = numero1
+                maiorNum = numero2
+            }
+                else if (numero2<=numero1){
+                    menorNum = numero2
+                    maiorNum = numero1
+                }
+                        let somaPar = 0
+                        let multiImpar = 1
+
+                        for(menorNum;menorNum <= maiorNum;menorNum++) {
+                            if (menorNum%2==0){
+                            somaPar+=menorNum
+                            }   else{
+                                    multiImpar*=menorNum
+                                }
+    }
+    console.log(`Soma dos pares: ${somaPar}\nMultiplicação dos Ímpares: ${multiImpar}`)
+---------------------------------------------------------------------
+21)
+    let contador = 1
+    let verificador = 0
+    while (true) {
+        contador++
+        if (contador%2===0||contador%3===0||contador%5===0||contador%7===0){
+            if (contador/2==1){
+                console.log(contador)
+                verificador++
+                continue
+            }
+            else if (contador/3==1){
+                console.log(contador)
+                verificador++
+                continue
+            }
+            else if (contador/5==1){
+                console.log(contador)
+                verificador++
+                continue
+            }
+            else if (contador/7==1){
+                console.log(contador)
+                verificador++
+                continue
+            }
+            continue
+        }
+        else{
+            console.log(contador)
+            verificador++
+        }
+        if (verificador>=20){
+            break
+        }
+}
+
+
+
+
+

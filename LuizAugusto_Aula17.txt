@@ -1,0 +1,68 @@
+1)
+        function VerificarPositivo(numero) {
+                return numero > 0
+        }
+            let numeroUsuario = +prompt("Digite um número")
+                VerificarPositivo(numeroUsuario) ? console.log("Positivo") : console.log("Negativo")
+
+2)
+----------------------------------------------------------------------------------------------------
+        function minimo(a, b) {
+            return a < b 
+        } 
+
+            let nA = + +prompt("digite o numero A")  
+            let nB = + +prompt("digite o numero B")
+
+                minimo(nA, nB) ? console.log(`${nA}`) : console.log(`${nB}`)
+----------------------------------------------------------------------------------------------------
+3)
+        function potencia(a, b) {
+        return a ** b
+        }
+            let nA = +prompt("digite o numero A")
+            let nB = +prompt("digite o numero B")
+            let nPotencia = potencia(nA,nB)
+
+                console.log(nPotencia)
+----------------------------------------------------------------------------------------------------
+4)
+        function fMedia(f1, f2, f3) {
+            return (f1 + f2 + f3) / 3
+        } 
+            let n1 = +prompt("digite a primeira nota")
+            let n2 = +prompt("digite a segunda nota") 
+            let n3 = +prompt("digite a terceira nota")  
+            let media = fMedia(n1, n2, n3)
+
+       console.log(media)
+----------------------------------------------------------------------------------------------------
+5)
+function fMedia(f1) {
+    if (f1 < 5){
+        return ("D")
+    } else if (f1 < 7){
+        return ("C")
+    } else if (f1 < 9){
+        return ("B")
+    }
+        return ("A")
+} let media = +prompt("Média:")
+console.log(`Conceito: ${fMedia(media)}`)
+----------------------------------------------------------------------------------------------------
+6)
+function fPesoIdeal(fAltura, fSexo) {
+        if (fSexo === "F") {
+            return (62.1 * fAltura - 44.7)
+        }  else if (fSexo === "M") {
+                return (72.7 * fAltura - 58)
+            }
+}               let altura = prompt("Altura:")
+                altura = +altura.replace(",", ".")
+
+                    let sexo = prompt("Digite F para feminino e M para Masculino").toUpperCase()
+                    let pesoIdeal = fPesoIdeal(altura, sexo)
+
+        console.log(`Peso ideal: ${pesoIdeal.toFixed(2)}`)
+----------------------------------------------------------------------------------------------------
+7)
