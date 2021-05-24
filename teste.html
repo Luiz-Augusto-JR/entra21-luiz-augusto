@@ -7,38 +7,32 @@
 </head>
 <body> 
     <script>
-Crie uma função que receba uma array e retorne o primeiro e o último elemento desse array como um novo.
-O array pode ter qualquer tamanho.
-function farray(f1) {
-
-}
-
-
-
-
-
+Escreva uma função que receba dois parâmetros. O primeiro é o elemento que repetirá, enquanto o segundo é
+o número de vezes que haverá a repetição. Um array deve ser retornado
+Exemplo:
+repetirElemento("oi", 3) // ["oi", "oi", "oi"]
 
 let vetor = []
-        function armazenarValores(){
-            for (let i = 0; i<50; i++){
-            let numero = Math.floor((Math.random()*1000-1)+1)
-            vetor.push(numero)
+        function fVetor(vetor){
+            for (let i = 0; i < 5; i++){
+                vetor[i] = +prompt("digite um numero")
             }
+            return(vetor)
         }
-        armazenarValores()
-        let maiorPosicao = 0
-        let menorPosicao = 0
-        function checarMaiorMenor(lista){
-            for (let i = 0; i<50; i++){
-                if (lista[i]<lista[menorPosicao]){
-                    menorPosicao = i
-                } if(lista[i] > lista[maiorPosicao]){
-                    maiorPosicao = i
-                }
-            }
+        
+        console.log(fVetor(vetor))
+
+        function mudarElemento(vetor){
+            vetor[1] = 10
+            vetor[2] = 30
+            return vetor
         }
-        checarMaiorMenor(vetor)
-        console.log(`O maior valor da lista é ${vetor[maiorPosicao]} e o menor é ${vetor[menorPosicao]}`)
+
+        console.log(mudarElemento(vetor))
+
+
+Faça uma função que receba um array de 5 elementos. Modifique o vetor[1] = 10 e vetor[2] = 30 e retorne o vetor modificado. 
+Ao final mostre na tela o vetor original e o vetor modificado.
     </script>
 </body>
 </html>~szzzs 
