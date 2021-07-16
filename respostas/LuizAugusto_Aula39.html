@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /*
+        1. Crie uma função unicos(vetor) que retorna um vetor com elementos únicos.
+        Ex.: unicos([1, 2, 2, 3, 3, 4, 5]) -> 1, 2, 3, 4, 5
+       
+
+            let conjunto = new Set(["1", "2", "2", "3", "3", "4", "5"])
+            console.log(conjunto)
+            console.log(Array.from(conjunto))
+    */
+
+
+        /*
+    
+        1) Escreva a função imprimeNumeros(comeco, fim) que mostre um número a cada segundo, começando
+        do comeco até o fim.
+    
+        Faça duas variantes da solução:
+        1. Usando setInterval
+        2. Usando setTimeout
+        */
+
+
+        // function imprimeNumeros(comeco, fim) {
+        //     if(comeco <= fim) {   
+        //             console.log(comeco) 
+        //             comeco++    
+        //         setTimeout(imprimeNumeros, 1000, comeco, fim)
+        //     } 
+        // }
+        // function imprimeNumeros(comeco, fim) {
+        //     let tempo = setInterval(() => {
+        //         console.log(comeco)
+        //         comeco++
+        //         if(comeco > fim) clearInterval(tempo)}, 100)
+        // }
+
+
+
+
+        /*
+        2) Utilizando setInterval faça um relógio que obtenha o horário atual
+        e faça ele aparecer na tela no formato:
+        hh:mm:ss
+
+        */
+        let hoje = new Date();
+        setInterval(atualizaRelogio, 1000)
+        function atualizaRelogio(){
+            hoje = new Date()
+            console.clear()
+            console.log(`${hoje.getHours() < 10 ? '0' + hoje.getHours() : hoje.getHours()}:${hoje.getMinutes() < 10 ? '0' + hoje.getMinutes() : hoje.getMinutes()}:${hoje.getSeconds() < 10 ? '0' + hoje.getSeconds() : hoje.getSeconds()}`)
+        }
+
+        /*
+    
+        3) Faça um timer através da função criaTimer(tempo, callback) que receba o valor inicial através de um <input type="time">
+        e dispare uma função callback quando o tempo acabar.
+    
+        4) Crie um cronômetro que contenha:
+            - Botão de início - iniciar o cronômetro.
+            - Botão de parar - parar o cronômetro.
+            - Botão de reset - resetar o tempo para 0.
+            - Display que mostra o número de segundos passados.
+        */
+
+    </script>
+</body>
+
+</html>

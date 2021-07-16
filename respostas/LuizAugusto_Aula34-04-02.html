@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .campo {
+            position: relative;
+            width: 600px;
+            height: 300px;
+            background-color: green;
+            border: 10px solid black;
+        }
+
+        .bola {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 100%;
+            transition: all .3s;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="campo">
+        <div class="bola"></div>
+    </div>
+
+    <script>
+        let campo = document.querySelector(".campo")
+        let bola = document.querySelector(".bola")
+
+        if (top < 0) {
+            top = 0;
+        }
+
+        if (left < 0) {
+            left = 0;
+        }
+
+
+
+        campo.addEventListener("click", function (event) {
+            bola.style.top = event.clientY - bola.clientWidth + "px"
+            bola.style.left = event.clientX - bola.clientWidth + "px"
+            let top = event.clientY - bola.clientWidth
+            let left = event.clientX - bola.clientWidth
+        })
+
+
+    </script>
+</body>
+
+</html>
