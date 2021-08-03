@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+class funcionario {
+
+    #matricula;
+    #nome;
+    #salario;
+
+
+    constructor(matricula, nome, salario){
+        if (Number.isInteger(matricula) || matricula < 0){
+          throw "Matricula inválida"
+        }
+
+        if(nome.length < 4 || nome.length > 50){
+            throw   "Nome Inválido";
+        }
+
+        if(salario < 465) {
+            throw "Salário Inválido";
+        }
+
+        this.#nome = nome
+        this.#salario = salario
+        this.#matricula = matricula
+    }
+
+    get matricula(){
+        return this.#matricula;
+    }
+    get nome(){
+        return this.#nome;
+    }
+
+    get salario(){
+        return this.#salario;
+    }
+
+    set matricula(valor){
+        if (Number.isInteger(this.#matricula) || matricula < 0){
+          throw "Matricula inválida"
+        }
+    }
+
+    
+    set nome(valor){
+        if(nome.length < 4 || nome.length > 50){
+            throw   "Nome Inválido";
+        }
+    }
+
+    
+    set salario (valor){
+        if(salario < 465) {
+            throw "Salário Inválido";
+        }
+    }
+
+}
+
+const funcionarios = new funcionario(123, "pedro", 5000)
+
+    </script>
+</body>
+</html>

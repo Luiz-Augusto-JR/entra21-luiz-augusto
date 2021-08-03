@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /*class produto {
+            constructor(nomeLoja, preco) {
+                this.nomeLoja = nomeLoja
+                this.preco = preco
+            }
+
+            getDescricao() {
+                return "Produto de informática";
+            }
+        }
+
+        class Mouse extends produto {
+            constructor(tipo, descricao) {
+                this.tipo = tipo
+                this.descricao = descricao
+            }
+
+            getDescricao() {
+                return `${this.descricao} ${this.tipo}`
+            }
+
+        }
+        class livro extends produto {
+            constructor(autor, descricao) {
+                this.autor = autor
+                this.descricao = descricao
+            }
+
+        }
+
+
+        //1) Corrija o script a seguir para que ele funcione
+
+        class Animal {
+            constructor(nome) {
+                this.nome = nome
+            }
+        }
+
+        class Coelho extends Animal {
+            constructor(nome) {
+                super(nome)
+                this.nome = nome
+                this.criadoEm = Date.now()
+            }
+        }
+
+        let coelho = new Coelho("Coelho Branco")
+        alert(coelho.nome)
+            
+
+
+        /*3) Crie a classe Imovel, que possui um endereço e um preço.
+                a. crie uma classe Novo, que herda Imovel e possui um adicional no preço. Crie
+                métodos de acesso e impressão deste valor adicional.        
+                b. crie uma classe Velho, que herda Imovel e possui um desconto no preço. Crie
+                métodos de acesso e impressão para este desconto.
+                
+                Ambas as classes Novo e Velho devem implementar um método calculaTotal() que informa
+                o valor com o adicional ou com o desconto.
+        class Imovel {
+            constructor(endereco, preco) {
+                this.endereco = endereco;
+                this.preco = preco;
+            }
+        }
+        class Novo extends Imovel {
+            constructor(endereco, preco, adicional) {
+                super(endereco, preco)
+                this.adicional = adicional;
+            }
+
+            calculaTotal() {
+                return this.adicional + this.preco
+            }
+        }
+        class Velho extends Imovel {
+            constructor(endereco, preco, desconto) {
+                super(endereco, preco)
+                this.desconto = desconto;
+            }
+            calculaTotal() {
+                return this.preco - this.desconto
+            }
+        }
+
+        /*1) Crie uma função somar(n1, n2) que some dois números caso o resultado seja par a função deve lançar um erro OddNumberError que
+            tem a mensagem "O número é ímpar". O script deve chamar a função e mostrar o resultado ou o erro. Após a execução da função
+            deve ser mostrado uma mensagem "Finalizando o programa...".
+    */
+
+        function somar(n1, n2) {
+            let n3 = n1 + n2;
+            if(n3 % 2 === 0){
+            return true
+        } else {
+            return false
+        }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
